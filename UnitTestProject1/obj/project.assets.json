@@ -1634,6 +1634,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "MyProject/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MyProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyProject.dll": {}
+        }
       }
     }
   },
@@ -5636,6 +5646,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "MyProject/1.0.0": {
+      "type": "project",
+      "path": "../MyProject/MyProject.csproj",
+      "msbuildProject": "../MyProject/MyProject.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5643,6 +5658,7 @@
       "MSTest.TestAdapter >= 2.1.0",
       "MSTest.TestFramework >= 2.1.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
+      "MyProject >= 1.0.0",
       "coverlet.collector >= 1.2.0"
     ]
   },
@@ -5675,7 +5691,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Lokesh Test Code\\MyApplication\\MyProject\\MyProject.csproj": {
+              "projectPath": "D:\\Lokesh Test Code\\MyApplication\\MyProject\\MyProject.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
